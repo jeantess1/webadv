@@ -66,18 +66,7 @@ function App() {
     return a
   }
    
-  function restorevalue(){
-    localStorage.setItem({name:"nutella",qte:3})
-  }
-  var chocolat=localStorage.getItem([0]['nutella'])
-  console.log(chocolat)
-  restorevalue()
-  function displayAPI(){
-    fetch('https://esilv.olfsoftware.fr/td5/register')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error(error))
-  }
+  
 
 
   return (
@@ -89,7 +78,7 @@ function App() {
       <button type="button" onClick={list}>Ajouter ce produit</button>
       
       <div id="élément liste"></div>
-      <div id="displayAPI">{displayAPI}</div>
+      <div id="displayAPI">{}</div>
 
     </div>
   );
